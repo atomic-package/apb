@@ -8,6 +8,12 @@ import (
 	"apb/lib/create"
 )
 
+// These variables are set in build step
+var (
+	Version  = "unset"
+	Revision = "unset"
+)
+
 func main() {
 	app := cli.NewApp()
 	app.Name = "apb-cli"
