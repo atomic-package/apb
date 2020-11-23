@@ -4,7 +4,6 @@ import (
 	"log"
 	"os"
 
-	"fmt"
 	"github.com/urfave/cli"
 	"apb-test/lib/create"
 )
@@ -29,8 +28,6 @@ func main() {
 			Aliases: []string{"g"},
 			Usage:   "generate scss files from `assetsType`",
 			Action:  func(c *cli.Context) error {
-				fmt.Println("path:", c.String("path"))
-				fmt.Println("assetsType: ", c.Args().First())
 				create.Start("", c.String("path"), c.Args().First())
 				return nil
 			},

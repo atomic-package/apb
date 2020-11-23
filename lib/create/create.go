@@ -5,7 +5,6 @@ import (
 	"log"
 	"io/ioutil"
 	"os"
-	"fmt"
 	"path/filepath"
 	"path"
 	"regexp"
