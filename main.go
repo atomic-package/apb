@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
-	"github.com/atomic-package/apb/lib/create"
+	"apb/lib/create"
 )
 
 // These variables are set in build step
