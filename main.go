@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
-	"apb-test/lib/create"
+	"apb/lib/create"
 )
 
 func main() {
