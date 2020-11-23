@@ -22,7 +22,7 @@ $ go get github.com/atomic-package/apb
 **Default Usage**
 
 ```
-apb new
+$ apb new
 ```
 
 scssフォルダを基に、各ファイルが生成されます。
@@ -30,7 +30,7 @@ scssフォルダを基に、各ファイルが生成されます。
 **Designation Folder Name**
 
 ```
-apb new [appName]
+$ apb new [appName]
 ```
 
 任意のフォルダ名を指定できます。
@@ -40,11 +40,15 @@ apb new [appName]
 
 
 ```
-apb --path=path new [appName]
+$ apb new [appName] --path=path
 ```
-
 任意の生成パスを指定できます。
 
+pathフラグのショートカットコマンドは以下の通りとなります。
+
+```
+$ apb new -p path
+```
 
 ### Generate Command
 
@@ -52,13 +56,13 @@ apb --path=path new [appName]
 **Default Usage**
 
 ```
-apb generate [assetsType]
+$ apb generate [assetsType]
 ```
 
 **Shortcut**
 
 ```
-apb -g [assetsType]
+$ apb g [assetsType]
 ```
 
 ### Assets Type

@@ -1,6 +1,6 @@
 project_name: apb-cli
 env:
-  - GO111MODULE=off
+  - GO111MODULE=on
 before:
   hooks:
     - go mod tidy

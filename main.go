@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
-	"apb/lib/create"
+	"github.com/atomic-package/apb/lib/create"
 )
 
 // These variables are set in build step
@@ -18,21 +18,16 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "apb-cli"
 	app.Usage = "Command line tool for developing APB CSS (Atomic Parts Base CSS)"
-	app.Version = "1.0.0"
+	app.Version = "1.1.0"
 
-	app.Flags = []cli.Flag{
-		&cli.StringFlag{
-			Name: "path",
-			Aliases: []string{"p"},
-			Usage: "Load configuration",
-		},
-	}
-
-	app.Commands = []*cli.Command{
+	app.Commands = []cli.Command{
 		{
 			Name:    "generate",
 			Aliases: []string{"g"},
 			Usage:   "generate scss files from `assetsType`",
+			Flags: []cli.Flag{
+				cli.StringFlag{Name: "path, p"},
+			},
 			Action:  func(c *cli.Context) error {
 				create.Start("", c.String("path"), c.Args().First())
 				return nil
@@ -42,6 +37,9 @@ func main() {
 			Name:    "new",
 			Aliases: []string{"n"},
 			Usage:   "create APB scss files",
+			Flags: []cli.Flag{
+				cli.StringFlag{Name: "path, p"},
+			},
 			Action:  func(c *cli.Context) error {
 				create.Start(c.Args().First(), c.String("path"), "")
 				return nil
