@@ -9,15 +9,6 @@ http://apbcss.com/
 APBCSS Assets File 生成の為のコマンドラインツールです。
 
 
-## Install
-
-**Install with [npm](https://www.npmjs.com):**
-
-```
-npm install -g @atomic-package/apb-cli
-```
-
-
 ## usage
 
 **Default Usage**
