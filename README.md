@@ -9,6 +9,14 @@ http://apbcss.com/
 APBCSS Assets File 生成の為のコマンドラインツールです。
 
 
+## Install
+
+go
+
+```
+$ go get github.com/atomic-package/apb
+```
+
 ## usage
 
 **Default Usage**
