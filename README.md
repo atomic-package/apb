@@ -111,6 +111,14 @@ scss/
     
 ```
 
+### GOPATH
+
+Make sure your `PATH` includes the `$GOPATH/bin` directory so your commands can
+be easily used:
+```
+export PATH=$PATH:$GOPATH/bin
+```
+
 ## Creators
 
 **Daisuke Takayama**
