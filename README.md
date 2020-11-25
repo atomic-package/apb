@@ -14,7 +14,7 @@ APBCSS Assets File 生成の為のコマンドラインツールです。
 go
 
 ```
-$ go get github.com/atomic-package/apb
+$ GO111MODULE=on go get github.com/atomic-package/apb
 ```
 
 ## usage
